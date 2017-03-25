@@ -1,0 +1,10 @@
+EAGLE Version 4.16r2 Copyright (c) 1988-2006 CadSoft
+
+Electrical Rule Check for /home/ff/eagle/sensor-ctrl/sensor-ctrl.sch at  8/09/2007 20:31:03 
+
+WARNING: Sheet 1/1: POWER Pin IC4P VCC connected to +5V
+
+Board and schematic are consistent
+
+    0 errors
+    1 warnings

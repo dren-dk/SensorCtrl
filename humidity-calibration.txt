@@ -1,0 +1,76 @@
+                     Calibration of humidity sensors.
+      The calibration of humidity sensors is not so easy. One can
+      perform a lot of measurements in the climate chamber but
+      there is a much cheaper and low cost way to check humidity
+      sensors by means of salt solutions. Special saturated salt
+      solutions have always the same humidity in the area above.
+      This humidity depends only on temperature. Find below and
+      overview of salt-solutions that can be used.
+
+Salt (saturated in water)                RH (%)
+                                       @ 25 ºC            @ 20 ºC       .
+Lithium Chloride         LiCl            11.3 (±  0.3)     12
+Magnesium Chloride       MgCl            32.8 (±  0.3)     33.1 (± 0.2)
+Magn. Nitrate            Mg(NO3)          53.0 (± 0.1)     55
+Sodium Chloride          NACl            75.3 (±  0.1)     75.5 (± 0.1)
+Potassium Chloride       K2SO4            97.3 (± 0.5)     97.6 (± 0.5)
+(Handbook of Chemistry and Physics)
+                  Table 1, Humidity of saturated salt solutions
+
+      The saltsolution must be put into a glass container with a
+      sealable top. With a couple of cm. Saltsolution on bottom the
+      humidity above is constant and only depends on temperature.
+      Place the sensor into the air above the solution and close
+      the access hole carefully. Leave the sensor stabalizing for
+      about half an hour and read afterwards the sensors value. Be
+      aware that the temperature of the container needs to be
+      constant over the period. Therefore it is recommended to use
+      a well-isolated glass container.
+      In case a two point calibration is performed in general LiCl
+      and NaCl solutions are used.
+      In a three point calibration LiCl, Mg(NO3) and K2SO4 solutions
+      are recommended.
+      Feb 2001
+
+
+27.5 us 
+
+
+
+75.3 % RH = 150 clk. @ 25 deg.
+
+h=75.3
+
+
+t: Temperatur i deg C
+c: capacitans
+o: offset capacitans @ 55 %RH
+s: sensitivity
+
+
+
+
+h = (c - 0.16*t - o)/s + 55
+
+
+
+---------------------------
+
+h = (c - ((t*16)/60) - o) * d
+
+
+delta = (256*(509-487))/(75.4-54.3) = 
+offset = 487-54.3+(22.5*16/60) = 426.7
+
+o = c - ((t*16)/60) - h/d
+
+    487 - (22.5*16/60) - (256*54.3/266.91)
+
+---------------------------------
+Board 1:
+
+487 clk @ 54.3% 
+509 clk @ 75.4%
+
+
+---------------------------------

@@ -1,0 +1,5 @@
+#!/usr/bin/perl -w
+use strict;
+
+
+##system("avrdude -c usbtiny -p atmega88 -e -U eeprom:w:eeprom.hex");

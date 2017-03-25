@@ -1,0 +1,7 @@
+Power: skrue terminaler (voltage sense) (post-ups)
+2x Voltage sense extra: Skrue terminal. (battery, psu)
+
+1x lm75 onboard + 7x outboard.
+Humidity sensor onboard.
+
+Husk ekstra kabinet micro sw.
